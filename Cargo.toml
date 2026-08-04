@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/*"]
+resolver = "3"
+
+# 크레이트 간 공통 버전을 여기서 한 번만 정의한다.
+# 각 크레이트는 { workspace = true } 로 참조한다.
+[workspace.dependencies]
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+
+# 릴리즈 빌드는 성능 측정의 기준이 되므로 처음부터 명시해 둔다.
+[profile.release]
+lto = "thin"
+codegen-units = 1

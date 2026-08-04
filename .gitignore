@@ -1,0 +1,18 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# napi 산출물
+*.node
+
+# Node
+node_modules/
+dist/
+.turbo/
+
+# 캡처 저장소 
+.vrt-store/
+*.noindex/
+
+
+*.local.md

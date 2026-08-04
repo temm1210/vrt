@@ -1,0 +1,11 @@
+{
+  "name": "vrt",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "build:rust": "cargo build --release",
+    "test:rust": "cargo test"
+  }
+}
