@@ -8,6 +8,9 @@ resolver = "3"
 edition = "2024"
 license = "MIT"
 
+[workspace.lints.rust]
+unsafe_code = "deny"
+
 [profile.release]
 lto = "thin"
 codegen-units = 1
