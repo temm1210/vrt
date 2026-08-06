@@ -7,6 +7,10 @@
 crates/*/index.js
 crates/*/index.d.ts
 
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
 # Node
 node_modules/
 dist/
