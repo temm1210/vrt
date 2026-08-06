@@ -1,5 +1,3 @@
 packages:
-  - 'packages/*'
-  # napi 바인딩 크레이트만 npm 패키지이기도 하다.
-  # 나머지 crates/* 는 Cargo 만 알면 되므로 여기 넣지 않는다.
-  - 'crates/vrt-node'
+  - "packages/*"
+  - "crates/vrt-binding"

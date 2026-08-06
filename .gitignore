@@ -4,6 +4,8 @@
 
 # napi 산출물
 *.node
+crates/*/index.js
+crates/*/index.d.ts
 
 # Node
 node_modules/
