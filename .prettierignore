@@ -1,0 +1,6 @@
+dist/
+target/
+pnpm-lock.yaml
+crates/*/index.js
+crates/*/index.d.ts
+**/.omc/
