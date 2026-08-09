@@ -1,7 +1,7 @@
-use xxhash_rust::xxh3::xxh3_64;
+use xxhash_rust::xxh3::xxh3_128;
 
-pub fn hash_bytes(data: &[u8]) -> u64 {
-    xxh3_64(data)
+pub fn hash_bytes(data: &[u8]) -> u128 {
+    xxh3_128(data)
 }
 
 #[cfg(test)]
