@@ -10,7 +10,10 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint ."
   },
-  "devDependencies": {
+  "dependencies": {
     "playwright": "1.60.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3"
   }
 }
