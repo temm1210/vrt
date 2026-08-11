@@ -242,6 +242,12 @@ importers:
         specifier: ^24.13.3
         version: 24.13.3
 
+  playground/basic:
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.3
+        version: 24.13.3
+
 packages:
 
   '@emnapi/core@1.11.2':
