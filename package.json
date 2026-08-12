@@ -11,9 +11,15 @@
       "onFail": "download"
     }
   },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
+    "build": "pnpm -r --filter='!vrt-binding' build",
     "build:rust": "cargo build --release",
     "test:rust": "cargo test",
+    "play:serve": "pnpm --filter @vrt/playground-basic dev",
+    "play": "pnpm build && pnpm --filter @vrt/playground-basic vrt",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
