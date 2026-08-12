@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "node server.ts",
+    "vrt": "vrt run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@types/node": "^24.13.3"
+    "@types/node": "^24.13.3",
+    "@vrt/cli": "workspace:*"
   }
 }

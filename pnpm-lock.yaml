@@ -232,7 +232,17 @@ importers:
         specifier: ^3
         version: 3.8.2(@emnapi/runtime@1.11.2)(@types/node@24.13.3)
 
-  packages/engine:
+  packages/cli:
+    dependencies:
+      '@vrt/runner':
+        specifier: workspace:*
+        version: link:../runner
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.3
+        version: 24.13.3
+
+  packages/runner:
     dependencies:
       playwright:
         specifier: 1.60.0
@@ -247,6 +257,9 @@ importers:
       '@types/node':
         specifier: ^24.13.3
         version: 24.13.3
+      '@vrt/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
 
 packages:
 
